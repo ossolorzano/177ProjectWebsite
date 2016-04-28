@@ -1,0 +1,101 @@
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Team 2 Homepage</title>
+
+<link rel="stylesheet" type="text/css" href="scripts/dropdown.css">
+<link rel="stylesheet" type="text/css" href="scripts/map.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js""></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization&.js"></script>
+
+</head>
+<FONT FACE="arial" color="white">
+<body style="background-color:#262626">
+<script src="/~solorzao/js/sql.js"></script>
+<script src="/~solorzao/js/googleMap.js"></script>
+<!-- top header -->
+<center><h1 style="color:#FFFFFF">Team 2 Homepage</h1></center>
+
+<hr>
+
+<!-- dropdown menus -->
+<center>
+
+<div class="dropdown">
+<a href="index.html">
+	<button class="dropbtn">
+	Home
+	</button>
+</a>
+</div>
+
+<div class="dropdown">
+	<button class="dropbtn">Profiles</button>
+	<div class="dropdown-content">
+		<a href="oscarProfile.html"> Oscar Solorzano </a>
+		<a href="kyleProfile.html">Kyle Matyac </a>
+	</div>
+</div>
+
+<div class="dropdown">
+	<button class="dropbtn">Assignments</button>
+	<div class="dropdown-content">
+		<a href="proposal.html"> Research Paper Review and Proposal </a>
+		<a href="progressReport.html"> Progress Report </a>
+		<a href="assignment3.html"> Project Oral Presentation </a>
+		<a href="assignment4.html"> Final Team Project Report </a>
+	</div>
+</div>
+</center>
+<hr>
+<!-- random picture-->
+<!--
+<img style="width:100%;height:600px" src="img/indexpicture.jpg">
+-->
+<!-- Beginning of project -->
+
+<h2>Type Zip Code or State and Press Search!</h2>
+
+<!--ZipDropdown-->
+<div style="margin-bottom:20px">
+	<div class="ui-widget" style="display: inline-block">
+		<label for="zipDropdown">Zip Code</label>
+		<input id="zipDropdown" name="zipDropdown">
+	</div>
+	<!--Zip Button-->
+	<button id="zipButton" type="button" style="display: inline-block; margin-left: 20px">Zip Search</button>
+</div>
+<!--StateDropdown-->
+<div style="margin-bottom:20px">
+	<div class="ui-widget" style="display: inline-block">
+		<label for="stateDropdown">State</label>
+		<input id="stateDropdown" name="stateDropdown">
+	</div>
+	<!--State Button-->
+	<button id="stateButton" type="button" style="display: inline-block; margin-left: 20px">State Search</button>
+</div>
+<!--Initial Table-->
+<div id="table"></div>
+<!--Map Buttons-->
+<button id="resButton" type="button" style="display: inline-block; margin-left: 20px; margin-bottom: 20px">Residential</button>
+<button id="comButton" type="button" style="display: inline-block; margin-left: 20px; margin-bottom: 20px">Commercial</button>
+<button id="indButton" type="button" style="display: inline-block; margin-left: 20px; margin-bottom: 20px">Industrial</button>
+<!--Map-->
+<div id="map" class="map"></div>
+<hr>
+<!-- disclaimer -->
+<I><FONT SIZE="-1" COLOR="red">I take full responsibility
+for the information posted. The information on this page
+represents that of myself and not that of
+<A HREF="http://www.csus.edu">California State University,
+Sacramento</A> or the <A HREF="http://www.ecs.csus.edu">College of
+Engineering and Computer Science</A> 
+.</FONT></I>
+</body>
+</FONT>
+</html>
